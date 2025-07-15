@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+*{
+  font-family: montserrat;
+}
+
+h1{
+  @apply lg:text-4xl md:text-3xl sm:text-2xl;
+}
+p{
+  @apply lg:text-lg md:text-sm sm:text-[10px]
+}
+
+.text-outline{
+  color: black;
+  text-shadow:
+    0.4px 0.4px 0 gray,
+   -0.2px 0.5px 0 gray,
+    0.4px -0.6px 0 gray,
+   -0.2px -0.2px 0 gray;
+}
+
+.zoom {
+  animation: zoomIn 10s ease-in-out forwards;
+}
+
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: medium;
+}
+
+.each-slide-effect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
